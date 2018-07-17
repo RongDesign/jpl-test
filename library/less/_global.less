@@ -1,0 +1,44 @@
+/*************************
+
+ Project: Example for JPL
+ Author: David A Moore III
+ Date: May 17, 2016
+
+**************************/
+
+.wrap {
+	width:98%;
+	margin:0 auto;
+	max-width:1025px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Import fonts from google fonts
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300|Tinos:400,700);
+
+//Define fonts and fallbacks 
+@sans-serif:	'Open Sans', Helvetica, Arial, sans-serif;
+@serif:			'Tinos', Cambria, Times New Roman, Times, serif; 
+
+
+// Define Colors
+
+@grey:			#d7d7d7;
+@white:			#ffffff;
+@blue:			#003663;
+@black:			#000000;
+
+// Define Default Transition
+.transition(@what: all, @time: 2s, @transition: ease-in-out) {
+	-webkit-transition: @what @time @transition;
+	-moz-transition:    @what @time @transition;
+	-ms-transition:     @what @time @transition;
+	-o-transition:      @what @time @transition;
+	transition:         @what @time @transition;
+}

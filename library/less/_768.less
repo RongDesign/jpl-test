@@ -1,0 +1,180 @@
+/*************************
+
+ Project: Example for JPL
+ Author: David A Moore III
+ Date: May 17, 2016
+
+**************************/
+
+/*************************
+  Page Header
+**************************/
+
+header#page_header {
+		
+	h1#logo {
+		font-size:50px;
+		padding:30px 0 0 0;		
+	}
+}
+
+/*************************
+  Navigation
+**************************/
+
+.open_menu_button {
+	display:none;
+}
+
+nav {
+	display:table;
+	width:100%;
+	padding:0;
+	a {
+		display:table-cell;
+		text-align:center;
+		color:@white;
+		width:auto;
+		text-decoration:none;
+		text-transform:uppercase;
+		line-height:60px;
+		background-color:transparent;
+		border-bottom:none;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		-ms-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		transition: all 1s ease-out;
+		
+		&:hover {
+			background-color:@white;
+			color:@blue;
+		};
+	}
+}
+
+/*************************
+  Examples 1
+**************************/
+
+#examples_1 {
+	.service_block {
+		height:300px;
+		position:relative;
+		margin-bottom:60px;
+	}
+	#examples_1_1,#examples_1_2,#examples_1_3, #examples_1_4,#examples_1_5,#examples_1_6 {
+		position:relative;
+		.mercury {
+			background-color:@blue;
+			height:0;
+			width:100%;
+			position:absolute;
+			bottom:0;
+			-webkit-transition: height 2s ease-out;
+			-moz-transition: height 2s ease-out;
+			-ms-transition: height 2s ease-out;
+			-o-transition: height 2s ease-out;
+			transition: height 2s ease-out;
+		}
+		&:hover {
+			.mercury {
+				height:100%;
+			}
+		}
+	}
+}
+
+/*************************
+  Examples 2
+**************************/
+
+#examples_2 {
+	.service_block {
+		padding:15px;
+		box-sizing: border-box !important;
+
+	}
+	label {
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+	}
+	input[type=text], textarea, select {
+		width:100%;
+		background-image:url(../images/background_inputs.png);
+		border:1px solid @white;
+		-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+		box-shadow: 0 0 15px 0 rgba(0,0,0,.2);	
+		padding:5px;
+		box-sizing: border-box !important;
+	}
+	button {
+		width:80px;
+		height:80px;
+		float:right;
+		margin:20px 0;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		border:5px solid @blue;
+		background-color:@white;
+		font-size:12px;
+		font-size:@blue;
+		position:relative;
+		text-transform:uppercase;
+		text-align:center;
+		-webkit-transition: all .5s ease-in;
+		-moz-transition: all .5s ease-in;
+		-ms-transition: all .5s ease-in;
+		-o-transition: all .5s ease-in;
+		transition: all .5s ease-in;
+		&:active, &:hover {
+			border:5px solid @white;
+			background-color:@blue;
+			color:@white;
+			font-size:14px;
+		}
+	}
+	.found {
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-ms-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+		height:100px;
+		overflow:hidden;
+	}
+	.question {
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-ms-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+	}
+	.hide {
+		opacity:0;
+		width:0;
+	}
+		
+}
+
+.form_continued {
+	margin:30px 0 0 0;
+	overflow:hidden;
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+	
+}
+.form_continued_open_all {
+	height:200px;
+}
+
+.form_continued_open_one {
+	height:200px;
+}
+
+
+

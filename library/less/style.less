@@ -1,0 +1,41 @@
+/*************************
+
+ Project: Example for JPL
+ Author: David A Moore III
+ Date: May 17, 2016
+ 
+ Description: LESS Map for three quick examples of CSS and jQuery developed from scratch for JPL post invterview request.
+
+**************************/
+
+// Remove default browser formating
+// normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+
+@import "_normalize.less";
+
+// Import fonts and global less varables
+
+@import "_global.less";
+
+// Import Base (0 - 320px)
+
+@import "_base.less";
+
+// Import Basic Landscape (320 - 768px)
+
+@media only screen and (min-width: 320px) {
+@import "_320.less";
+}
+
+// Import iPad and Small Desktops (768 - 1025px)
+
+@media only screen and (min-width: 768px) {
+@import "_768.less";
+@import "_grid.less";
+}
+
+// Import iPad and Small Desktops (1025px and up)
+
+@media only screen and (min-width: 1025px) {
+@import "_1025.less";
+}
